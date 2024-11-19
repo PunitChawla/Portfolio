@@ -1,6 +1,6 @@
 import { OrbitControls, PerspectiveCamera, useGLTF } from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
-import { HackerRoom } from "../components/Hackerroom"
+import { HackerRoom } from "/src/components/Hackerroom"
 import { Suspense } from "react"
 import { CanvasLoader } from "../components/CanvasLoader"
 import { Leva, useControls } from "leva"
