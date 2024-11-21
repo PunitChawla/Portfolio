@@ -5,7 +5,6 @@ export default defineConfig({
     rollupOptions: {
       external: [
         '/src/components/Hackerroom', // Mark this module as external
-        'react', // Example of externalizing React
       ],
     },
   },
