@@ -4,7 +4,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       external: [
-        '/src/components/Hackerroom', // Mark this module as external
+        // '/src/components/Hackerroom', // Mark this module as external
       ],
     },
   },
