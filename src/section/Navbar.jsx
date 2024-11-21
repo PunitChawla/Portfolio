@@ -1,6 +1,6 @@
 import { useState } from "react"
 import {navLinks} from "../constant/index"
-
+import React from 'react'
 const NavItems = () => {
     return (
         <ul className="nav-ul">

@@ -1,11 +1,6 @@
 import { defineConfig } from 'vite';
 
+// https://vitejs.dev/config/
 export default defineConfig({
-  build: {
-    rollupOptions: {
-      external: [
-        // '/src/components/Hackerroom', // Mark this module as external
-      ],
-    },
-  },
+  // You can add additional configuration here
 });

@@ -2,6 +2,7 @@ import { useGLTF } from "@react-three/drei";
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import React from "react";
 export const Target = (props)=>{
     const targetRef = useRef();
     const { scene } = useGLTF(

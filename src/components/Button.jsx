@@ -1,3 +1,4 @@
+import React from 'react'
 export const Button = ({name , isBeam = false , containerClass  })=>{
     return(
         <button className={`btn ${containerClass}`}>

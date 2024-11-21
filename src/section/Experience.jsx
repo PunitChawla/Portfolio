@@ -1,4 +1,5 @@
 import { Canvas } from "@react-three/fiber"
+import React from 'react'
 import {workExperiences } from '../constant';
 import { OrbitControls } from "@react-three/drei";
 import { Suspense, useState } from "react";

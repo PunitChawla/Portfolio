@@ -6,7 +6,7 @@ import { Center, OrbitControls } from '@react-three/drei';
 import { myProjects } from '../constant';
 import { CanvasLoader } from '../components/CanvasLoader';
 import DemoComputer from '../components/DemoComputer';
-
+import React from 'react'
 
 const projectCount = myProjects.length;
 

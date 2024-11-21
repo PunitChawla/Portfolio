@@ -12,7 +12,7 @@ import Cube from "../components/cube"
 import Rings from "../components/Rings"
 import { HeroCamera } from "../components/HeroCamra"
 import { Button } from "../components/Button"
-
+import React from 'react'
 function Model({ url }) {
     const { scene } = useGLTF(url)
     return <primitive object={scene} />
@@ -82,7 +82,7 @@ export const Hero  =()=>{
                     <Suspense fallback={<CanvasLoader/>}>
 
                     <HeroCamera isMobile={isMobile}>
-                    {/* <HackerRoom scale={sizes.deskScale} position={sizes.deskPosition} rotation={[0, -Math.PI, 0]} /> */}
+                    <HackerRoom scale={sizes.deskScale} position={sizes.deskPosition} rotation={[0, -Math.PI, 0]} />
                     </HeroCamera>
 
                     {/* <OrbitControls /> */}

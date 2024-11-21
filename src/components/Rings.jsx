@@ -2,7 +2,7 @@ import { useGSAP } from '@gsap/react';
 import { Center, useTexture } from '@react-three/drei';
 import gsap from 'gsap';
 import { useCallback, useRef } from 'react';
-
+import React from 'react';
 const Rings = ({ position }) => {
   const refList = useRef([]);
   const getRef = useCallback((mesh) => {

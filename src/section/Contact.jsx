@@ -1,5 +1,6 @@
 import { useRef, useState } from "react"
 import emailjs from '@emailjs/browser'
+import React from 'react'
 export const Contact = ()=>{
 
     const [loading , setLoding] = useState(false)
