@@ -1,6 +1,6 @@
 import { OrbitControls, PerspectiveCamera, useGLTF } from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
-import { HackerRoom } from "/src/components/Hackerroom"
+
 import { Suspense } from "react"
 import { CanvasLoader } from "../components/CanvasLoader"
 import { Leva, useControls } from "leva"
@@ -13,6 +13,7 @@ import Rings from "../components/Rings"
 import { HeroCamera } from "../components/HeroCamra"
 import { Button } from "../components/Button"
 import React from 'react'
+import { HackerRoom } from "../components/Hackerroom"
 function Model({ url }) {
     const { scene } = useGLTF(url)
     return <primitive object={scene} />
