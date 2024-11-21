@@ -82,7 +82,7 @@ export const Hero  =()=>{
                     <Suspense fallback={<CanvasLoader/>}>
 
                     <HeroCamera isMobile={isMobile}>
-                    <HackerRoom scale={sizes.deskScale} position={sizes.deskPosition} rotation={[0, -Math.PI, 0]} />
+                    {/* <HackerRoom scale={sizes.deskScale} position={sizes.deskPosition} rotation={[0, -Math.PI, 0]} /> */}
                     </HeroCamera>
 
                     {/* <OrbitControls /> */}
