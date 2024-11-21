@@ -13,7 +13,8 @@ import Rings from "../components/Rings"
 import { HeroCamera } from "../components/HeroCamra"
 import { Button } from "../components/Button"
 import React from 'react'
-import { HackerRoom } from "../components/HackerRoom"
+import { HackerRoom } from "./Hackerroom"
+
 function Model({ url }) {
     const { scene } = useGLTF(url)
     return <primitive object={scene} />
