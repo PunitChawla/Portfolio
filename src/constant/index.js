@@ -65,7 +65,7 @@ export const navLinks = [
       desc: 'I developed a blogging platform similar to Medium, where users can post, read, and engage with blogs. The platform features a user-friendly interface for content creation and interaction, allowing seamless publishing and sharing of ideas',
       subdesc:
         'The platform uses React for the frontend and Node.js with Express for the backend. PostgreSQL manages the database, and its deployed on Vercel for scalability. TypeScript ensures type safety throughout the app.',
-      href: 'https://medium-blog-one-indol.vercel.app/signup',
+      href: 'https://medium-blog-one-indol.vercel.app',
       texture: '/textures/project/project2.mp4',
       logo: '/assets/project-logo2.png',
       logoStyle: {
