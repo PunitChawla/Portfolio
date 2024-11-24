@@ -28,7 +28,7 @@ export const navLinks = [
       desc: ' A data labeling platform where users upload images, and others contribute by voting or adding short descriptions. The Web3-powered system rewards users with money for accurate votes, encouraging collaboration and quality contributions.',
       subdesc:
         'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, solana and AWS cloud front , This is designed for optimal performance and scalability.',
-      href: 'https://github.com/PunitChawla',
+      href: 'https://github.com/PunitChawla/decentralized_data-labelling_platform',
       texture: '/textures/project/project1.mp4',
       logo: '/assets/project-logo1.png',
       logoStyle: {
@@ -56,7 +56,7 @@ export const navLinks = [
         {
           id: 4,
           name: 'Framer Motion',
-          path: '/assets/framer.png',
+          path: '/assets/nextjs.jpeg',
         },
       ],
     },
@@ -65,7 +65,7 @@ export const navLinks = [
       desc: 'I developed a blogging platform similar to Medium, where users can post, read, and engage with blogs. The platform features a user-friendly interface for content creation and interaction, allowing seamless publishing and sharing of ideas',
       subdesc:
         'The platform uses React for the frontend and Node.js with Express for the backend. PostgreSQL manages the database, and its deployed on Vercel for scalability. TypeScript ensures type safety throughout the app.',
-      href: 'https://github.com/PunitChawla',
+      href: 'https://medium-blog-one-indol.vercel.app/signup',
       texture: '/textures/project/project2.mp4',
       logo: '/assets/project-logo2.png',
       logoStyle: {
@@ -93,7 +93,7 @@ export const navLinks = [
         {
           id: 4,
           name: 'Framer Motion',
-          path: '/assets/framer.png',
+          path: '/assets/nextjs.jpeg',
         },
       ],
     },
@@ -102,7 +102,7 @@ export const navLinks = [
       desc: 'Uptune is a collaborative music player where multiple users can vote and play tracks, creating a dynamic playlist. Integrated with YouTube for video playback, it s perfect for parties and clubs, allowing real-time music sharing and interaction',
       subdesc:
         'Uptune uses Next.js for the frontend, PostgreSQL for database management, and Prisma as the ORM. The backend is powered by Express for routing, enabling seamless real-time music sharing and collaboration',
-      href: 'https://github.com/PunitChawla',
+      href: 'https://github.com/PunitChawla/UpTune',
       texture: '/textures/project/project3.mp4',
       logo: '/assets/project-logo3.png',
       logoStyle: {
@@ -132,7 +132,7 @@ export const navLinks = [
         {
           id: 4,
           name: 'Framer Motion',
-          path: '/assets/framer.png',
+          path: '/assets/nextjs.jpeg',
         },
       ],
     },
