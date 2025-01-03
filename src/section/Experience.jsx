@@ -13,7 +13,7 @@ import { Developer } from "../components/Developer";
     <section className="c-space my-20" id="work">
       <div className="w-full text-white-600">
         <p className="head-text"> Experience</p>
-
+        
         <div className="work-container">
           <div className="work-canvas">
             <Canvas>
@@ -44,7 +44,7 @@ import { Developer } from "../components/Developer";
 
                     <div className="work-content_bar" />
                   </div>
-
+                  
                   <div className="sm:p-5 px-2.5 py-5">
                     <p className="font-bold text-white-800">{item.name}</p>
                     <p className="text-sm mb-5">
