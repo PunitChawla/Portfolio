@@ -1,6 +1,13 @@
 import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // You can add additional configuration here
+  plugins: [react()],
+  optimizeDeps: {
+    include: ['three'],
+  },
+  resolve: {
+    dedupe: ['three', '@react-three/fiber', '@react-three/drei'],
+  },
 });

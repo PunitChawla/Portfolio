@@ -1,7 +1,7 @@
 import { OrbitControls, PerspectiveCamera, useGLTF } from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
 
-import { Suspense } from "react"
+import { Suspense, Component } from "react"
 import { CanvasLoader } from "../components/CanvasLoader"
 import { Leva, useControls } from "leva"
 import { useMediaQuery } from "react-responsive"
@@ -14,6 +14,29 @@ import { HeroCamera } from "../components/HeroCamra"
 import { Button } from "../components/Button"
 import React from 'react'
 import { HackerRoom } from "./Hackerroom"
+
+// Error Boundary Component
+class ErrorBoundary extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  static getDerivedStateFromError(error) {
+    return { hasError: true };
+  }
+
+  componentDidCatch(error, errorInfo) {
+    console.error('3D Scene Error:', error, errorInfo);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return <div className="text-white text-center p-4">3D scene failed to load. Please refresh the page.</div>;
+    }
+    return this.props.children;
+  }
+}
 
 function Model({ url }) {
     const { scene } = useGLTF(url)
@@ -78,7 +101,10 @@ export const Hero  =()=>{
 
             <div className="w-full  h-full absolute inset-0 ">
                     {/* <Leva/> */}
-                <Canvas className="w-full h-full " >
+                <ErrorBoundary>
+                <Canvas className="w-full h-full " onCreated={({ gl }) => {
+                    gl.setClearColor('#000000');
+                }}>
                     <ambientLight intensity={0.5} />
                    <PerspectiveCamera makeDefault position={[0,0,20]}/>
                     <Suspense fallback={<CanvasLoader/>}>
@@ -96,6 +122,7 @@ export const Hero  =()=>{
                     </group>            
                     </Suspense>
                 </Canvas>
+                </ErrorBoundary>
             </div>
 
             <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
